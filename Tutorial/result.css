@@ -1,0 +1,33 @@
+@CHARSET "ISO-8859-1";
+
+h1 {
+	color: #ff80c0;
+}
+
+#SassLogo {
+	width: 250px;
+	float: right;
+}
+
+th {
+	font-size: 15px;
+	text-decoration: underline;
+}
+
+#ProsAndCons td:FIRST-CHILD {
+	background-color: #8dfc96;
+}
+
+#ProsAndCons td:LAST-CHILD{
+	background-color: #ff5757;
+}
+
+#Features td:LAST-CHILD {
+	border: 1px solid;
+	background-color: #bce3fe;
+}
+
+#Features td:FIRST-CHILD{
+	font-weight: bold;
+	color: #ff5757;
+}
