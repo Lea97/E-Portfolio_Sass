@@ -1,11 +1,17 @@
 $red-color: #ff5757;
 $sass-color: #ff80c0;
+
 @mixin style($color) {
   background-color: $color;
 }
 
+@mixin style2($color2)
+{
+  color: $color2;
+}
+
 h1 {
-  color: $sass-color;
+  @include style2($sass-color);
 }
 
 #SassLogo {
@@ -14,7 +20,7 @@ h1 {
 }
 
 b {
-  color: $sass-color;;
+  @extend h1;
 }
 
 p {
@@ -41,7 +47,7 @@ th {
 #Features {
     td:FIRST-CHILD {
       font-weight: bold;
-      color: $red-color;
+       @include style2($red-color);
     }
     
     td:LAST-CHILD {
