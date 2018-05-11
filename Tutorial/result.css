@@ -9,6 +9,15 @@ h1 {
 	float: right;
 }
 
+b {
+	color: #ff80c0; 
+}
+
+p b{
+	font-style: italic;
+}
+
+
 th {
 	font-size: 15px;
 	text-decoration: underline;
@@ -18,16 +27,16 @@ th {
 	background-color: #8dfc96;
 }
 
-#ProsAndCons td:LAST-CHILD{
+#ProsAndCons td:LAST-CHILD {
 	background-color: #ff5757;
+}
+
+#Features td:FIRST-CHILD {
+	font-weight: bold;
+	color: #ff5757;
 }
 
 #Features td:LAST-CHILD {
 	border: 1px solid;
 	background-color: #bce3fe;
-}
-
-#Features td:FIRST-CHILD{
-	font-weight: bold;
-	color: #ff5757;
 }

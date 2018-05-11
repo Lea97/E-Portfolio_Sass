@@ -1,0 +1,53 @@
+$red-color: #ff5757;
+$sass-color: #ff80c0;
+@mixin style($color) {
+  background-color: $color;
+}
+
+h1 {
+  color: $sass-color;
+}
+
+#SassLogo {
+  width: 250px;
+  float: right;
+}
+
+b {
+  color: $sass-color;;
+}
+
+p {
+  b{
+    font-style: italic;
+  }
+}
+
+th {
+  font-size: 15px;
+  text-decoration: underline;
+}
+
+#ProsAndCons {
+    td:FIRST-CHILD {
+      @include style(#8dfc96);
+    }
+    
+    td:LAST-CHILD {
+      @include style($red-color);
+    }
+}
+
+#Features {
+    td:FIRST-CHILD {
+      font-weight: bold;
+      color: $red-color;
+    }
+    
+    td:LAST-CHILD {
+      border: 1px solid;
+      @include style(#bce3fe);
+    }
+}
+
+
